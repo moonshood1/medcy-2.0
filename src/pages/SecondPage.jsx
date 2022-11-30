@@ -87,19 +87,20 @@ function Treatment() {
         <h1 className="text-white text-4xl uppercase my-5 text-center">
           Les maladies traitees
         </h1>
-        <Method text={"Inflammations"} />
-        <Method text={"Infection sexuelles"} />
-        <Method text={"Infection oculaires "} />
-        <Method text={"Santé de l’homme/ Femme "} />
-        <Method text={"Affections de la peau "} />
-        <Method text={"Maladies digestives"} />
-        <Method text={"Douleurs et Affections diverses"} />
-
-        <button className="btn bg-medBlue text-white mt-10">
-          Voir tous les services
-        </button>
+        <div className="px-10">
+          <Method text={"Inflammations"} />
+          <Method text={"Infection sexuelles"} />
+          <Method text={"Infection oculaires "} />
+          <Method text={"Santé de l’homme/ Femme "} />
+          <Method text={"Affections de la peau "} />
+          <Method text={"Maladies digestives"} />
+          <Method text={"Douleurs et Affections diverses"} />
+          <button className="btn bg-medBlue text-white mt-10 text-lg md:text-lg">
+            Voir tous les services
+          </button>
+        </div>
       </article>
-      <article className="mt-auto">
+      <article className="hidden md:flex mt-auto">
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669567341/medcy/african-american-young-pretty-female-doctor-standi-2021-12-09-05-57-34-utc_1_zmxmlu.jpg"
           alt="doctor_lady"
@@ -111,8 +112,8 @@ function Treatment() {
 
 function Statistiques() {
   return (
-    <section className="grid grid-cols-1 mx-auto md:grid-cols-2 gap-10 md:px-48 my-5">
-      <div className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-32 my-5">
+      <div className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3 mx-auto">
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669568815/medcy/Capture_d_e%CC%81cran_2022-11-27_a%CC%80_17.05.43_ggvvuk.png"
           alt="doctors_icon"
@@ -123,7 +124,7 @@ function Statistiques() {
           <p className="text-medDarkGray">Patients satisfaits</p>
         </div>
       </div>
-      <div className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3">
+      <div className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3 mx-auto">
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669568815/medcy/Capture_d_e%CC%81cran_2022-11-27_a%CC%80_17.05.43_ggvvuk.png"
           alt="doctors_icon"

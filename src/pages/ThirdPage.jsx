@@ -11,7 +11,9 @@ function Doctor() {
           organisation, vos revenus et d’assurer le suivi de vos patients à
           distance ?
         </p>
-        <button className="btn bg-medBlue text-white mt-10">S'inscrire</button>
+        <button className="btn bg-medBlue text-white mt-10 text-lg md:text-lg">
+          S'inscrire
+        </button>
       </div>
       <div>
         <img

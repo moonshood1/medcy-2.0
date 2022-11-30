@@ -6,5 +6,20 @@
 
 
 .btn {
-    @apply rounded-lg py-2 px-3 lg:py-4 lg:px-5 text-sm md:text-lg cursor-pointer text-center tracking-wider
+    @apply rounded-lg py-2 px-4 lg:py-4 lg:px-5 cursor-pointer text-center tracking-wider
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #4AAAE1;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    border: 1px solid #4AAAE1;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
 }
