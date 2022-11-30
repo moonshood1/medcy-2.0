@@ -136,13 +136,14 @@ function Carousel() {
 
 function Telemedecine() {
   return (
-    <section className="hidden md:content md:flex md:py-2 md:px-48">
+    <section className="md:flex md:py-2 md:px-48">
       <img
         src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669550421/medcy/sick-afro-woman-wrapped-in-blanket-blowing-her-run-2021-08-29-10-14-46-utc_1_jhpnyq.jpg"
         alt=""
         style={{ maxHeight: "700px" }}
+        className="hidden md:block"
       />
-      <div className="ml-10 mt-auto mb-auto">
+      <div className="mx-2 md:ml-10 mt-auto mb-auto">
         <h1 className="text-black text-3xl md:text-5xl mt-10 font-bold">
           La Télémedecine
         </h1>
