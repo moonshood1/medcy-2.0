@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export function Header() {
   return (
     <section className="flex justify-between items-center px-10">
@@ -9,15 +11,25 @@ export function Header() {
         />
       </div>
       <div className="hidden md:flex text-gray-400 md:text-xl space-x-16">
-        <a href="/#">Home</a>
-        <a href="/#">Services</a>
-        <a href="/#">Contact</a>
+        <motion.a initial={{ y: 0 }} whileHover={{ y: -5 }} href="/#">
+          Home
+        </motion.a>
+        <motion.a initial={{ y: 0 }} whileHover={{ y: -5 }} href="/#">
+          Services
+        </motion.a>
+        <motion.a initial={{ y: 0 }} whileHover={{ y: -5 }} href="/#">
+          Contact
+        </motion.a>
       </div>
 
       <div className="">
-        <button className="hidden md:flex btn bg-medBlue text-white drop-shadow-2xl text-lg md:text-lg">
+        <motion.button
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.1 }}
+          className="hidden md:flex btn bg-medBlue text-white drop-shadow-2xl text-lg md:text-lg"
+        >
           S'inscrire maintenant{" "}
-        </button>
+        </motion.button>
       </div>
 
       <div className="flex md:hidden">

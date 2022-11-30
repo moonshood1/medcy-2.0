@@ -1,18 +1,39 @@
+import { motion } from "framer-motion";
+
+const buttonVariant = {
+  hover: {
+    scale: 1.02,
+    transition: {
+      duration: 0.5,
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
+
 const Description = ({ imgUrl, title, text }) => {
   return (
-    <article className="hidden md:content md:flex md:py-2 mt-10">
+    <motion.article
+      initial={{ x: 1 }}
+      whileHover={{ x: 10 }}
+      className="hidden md:content md:flex md:py-2 mt-10 cursor-pointer"
+    >
       <img src={imgUrl} alt="" className="w-28 h-28" />
       <div className="ml-10">
         <h1 className="text-black text-2xl font-bold mt-5">{title}</h1>
         <p className="text-gray-400 text-sm md:text-lg mt-2">{text}</p>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
 const Method = ({ text }) => {
   return (
-    <div className="flex my-3 gap-3 items-center">
+    <motion.div
+      initial={{ x: 0 }}
+      whileHover={{ x: 10 }}
+      className="flex my-3 gap-3 items-center"
+    >
       <div className="h-10 w-10 bg-medBlue rounded-full text-white grid place-content-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +51,7 @@ const Method = ({ text }) => {
         </svg>
       </div>
       <p className="text-lg text-medDarkGray">{text}</p>
-    </div>
+    </motion.div>
   );
 };
 
@@ -95,9 +116,13 @@ function Treatment() {
           <Method text={"Affections de la peau "} />
           <Method text={"Maladies digestives"} />
           <Method text={"Douleurs et Affections diverses"} />
-          <button className="btn bg-medBlue text-white mt-10 text-lg md:text-lg">
+          <motion.button
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className="btn bg-medBlue text-white mt-10 text-lg md:text-lg"
+          >
             Voir tous les services
-          </button>
+          </motion.button>
         </div>
       </article>
       <article className="hidden md:flex mt-auto">
@@ -113,7 +138,11 @@ function Treatment() {
 function Statistiques() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-32 my-5">
-      <div className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3 mx-auto">
+      <motion.div
+        variants={buttonVariant}
+        whileHover="hover"
+        className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3 mx-auto cursor-pointer"
+      >
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669568815/medcy/Capture_d_e%CC%81cran_2022-11-27_a%CC%80_17.05.43_ggvvuk.png"
           alt="doctors_icon"
@@ -123,8 +152,12 @@ function Statistiques() {
           <h1 className="font-bold text-2xl uppercase">+ 1 M</h1>
           <p className="text-medDarkGray">Patients satisfaits</p>
         </div>
-      </div>
-      <div className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3 mx-auto">
+      </motion.div>
+      <motion.div
+        variants={buttonVariant}
+        whileHover="hover"
+        className="flex items-center rounded-lg drop-shadow-xl bg-white w-96 p-3 mx-auto cursor-pointer"
+      >
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669568815/medcy/Capture_d_e%CC%81cran_2022-11-27_a%CC%80_17.05.43_ggvvuk.png"
           alt="doctors_icon"
@@ -136,7 +169,7 @@ function Statistiques() {
             Docteurs Généralistes / Spécialistes
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

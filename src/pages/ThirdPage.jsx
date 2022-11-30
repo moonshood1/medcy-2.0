@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 function Doctor() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10 my-20">
@@ -11,9 +12,13 @@ function Doctor() {
           organisation, vos revenus et d’assurer le suivi de vos patients à
           distance ?
         </p>
-        <button className="btn bg-medBlue text-white mt-10 text-lg md:text-lg">
+        <motion.button
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.1 }}
+          className="btn bg-medBlue text-white mt-10 text-lg md:text-lg"
+        >
           S'inscrire
-        </button>
+        </motion.button>
       </div>
       <div>
         <img

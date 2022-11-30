@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export function Footer() {
   return (
     <section className="p-10 h-auto bg-medDark w-full">
@@ -55,16 +57,24 @@ export function Footer() {
               className="bg-medDark border-b-2 border-gray-300 text-medDarkGray text-sm block w-full outline-none mt-4"
               placeholder="Votre email"
             />
-            <button className="btn bg-medBlue text-white drop-shadow-2xl text-sm mt-5">
+            <motion.button
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className="btn bg-medBlue text-white drop-shadow-2xl text-sm mt-5"
+            >
               Souscrire
-            </button>
+            </motion.button>
           </div>
         </div>
       </article>
       <article className="flex justify-between items-center mt-10 md:px-10  bottom-0">
         <div className="flex">
           <div className="mx-2 items-center">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/Medcy-108780835274082"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="h-6 w-6 bg-medBlue rounded-full text-white grid place-content-center">
                 <img
                   src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669766739/medcy/59439_o6giof.png"

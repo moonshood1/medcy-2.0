@@ -42,7 +42,6 @@ function Testimony() {
           },
         }}
         autoplayTimeout={5000}
-        loop
         autoplaySpeed={4000}
         // navSpeed={2000}
       >
@@ -54,7 +53,7 @@ function Testimony() {
             text={
               "Très bonne application franchement , qualité , rapidité et efficacité"
             }
-            name={"Lucas Paqueta"}
+            name={"Vincent Kouamé"}
           />
         </div>
         <div>
@@ -65,7 +64,7 @@ function Testimony() {
             text={
               " Je suis tres surpris par cette application , je ne pensais pas que je pouvais faire une consultation directement en ligne .Très bonne application franchement "
             }
-            name={"Carole Quitaine"}
+            name={"Carole Amani"}
           />
         </div>
         <div>
@@ -76,7 +75,7 @@ function Testimony() {
             text={
               "Application 100% ivoirienne , pour plus de santé à coeur et au coeur de l'humain  Un service client rapide et courtois"
             }
-            name={"Julien Chiaise"}
+            name={"Genevieve N'cho"}
           />
         </div>
         <div>
@@ -87,7 +86,7 @@ function Testimony() {
             text={
               "En téléconsultation, les médecins peuvent prescrire une ordonnance en ligne pour des médicaments, des examens médicaux ou des séances chez certains praticiens."
             }
-            name={"Kratos"}
+            name={"Dr Irma Hassan"}
           />
         </div>
       </OwlCarousel>

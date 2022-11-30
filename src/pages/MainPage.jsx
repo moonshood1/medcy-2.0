@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
@@ -37,9 +38,13 @@ function Carousel() {
                 minutes <br />
                 sans se déplacer
               </p>
-              <button className="btn mt-5 md:mt-32 bg-white text-medBlue drop-shadow-2xl text-lg md:text-lg">
+              <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                className="btn mt-5 md:mt-32 bg-white text-medBlue drop-shadow-2xl text-lg md:text-lg"
+              >
                 Prendre un RDV
-              </button>
+              </motion.button>
             </div>
           </div>
 
@@ -57,9 +62,13 @@ function Carousel() {
                 Finis les soucis de deplacement <br /> et de commodités
               </p>
 
-              <button className="btn hidden md:flex md:mt-32  bg-white text-medBlue text-lg md:text-lg">
+              <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                className="btn hidden md:flex md:mt-32  bg-white text-medBlue text-lg md:text-lg"
+              >
                 Prendre un RDV
-              </button>
+              </motion.button>
             </div>
           </div>
         </OwlCarousel>
@@ -84,11 +93,14 @@ function Carousel() {
           loop
           autoplaySpeed={4000}
         >
-          <div class="">
-            <div class="w-full">
-              <img src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669157215/medcy/2_bzsskt.jpg" />
-              <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-medBlue opacity-80">
-                <p class="my-2 text-lg text-white">
+          <div className="">
+            <div className="w-full">
+              <img
+                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669157215/medcy/2_bzsskt.jpg"
+                alt="img"
+              />
+              <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-medBlue opacity-80">
+                <p className="my-2 text-lg text-white">
                   Le soulagement d'accéder <br /> à un medecin, en quelques
                   minutes sans se déplacer
                 </p>
@@ -99,11 +111,14 @@ function Carousel() {
             </div>
           </div>
 
-          <div class="">
-            <div class="w-full">
-              <img src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669159759/medcy/1_64668197_omfgz4.png" />
-              <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-medBlue opacity-80">
-                <p class="my-1 text-lg text-white">
+          <div className="">
+            <div className="w-full">
+              <img
+                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669159759/medcy/1_64668197_omfgz4.png"
+                alt="img_alt"
+              />
+              <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-medBlue opacity-80">
+                <p className="my-1 text-lg text-white">
                   Avec Medcy, les consultations se font en un clic et à distance
                   Finis les soucis de deplacement et de commodités
                 </p>
@@ -139,9 +154,13 @@ function Telemedecine() {
           présentiel. Toutes les situations médicales peuvent donner lieu à une
           téléconsultation.
         </p>
-        <button className="btn bg-medBlue text-white mt-10 text-lg md:text-lg">
+        <motion.button
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.1 }}
+          className="btn bg-medBlue text-white mt-10 text-lg md:text-lg"
+        >
           S'inscrire
-        </button>
+        </motion.button>
       </div>
     </section>
   );
@@ -151,7 +170,7 @@ function AutoMedecine() {
   return (
     <section className="mx-2 mt-5">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 text-white gap-0">
-        <div className="px-2 bg-gray-800 pb-3">
+        <div className="px-4 bg-gray-800 pb-3">
           <h1 className="text-3xl md:text-5xl font-bold mt-3">
             L’automédication Facilite la{" "}
             <span className="text-red-600"> Mort</span>
@@ -182,9 +201,13 @@ function AutoMedecine() {
             Aggravation des maux.
           </p>
 
-          <button className="btn bg-medBlue text-white mt-5 md:mt-32 text-lg md:text-lg">
+          <motion.button
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className="btn bg-medBlue text-white mt-5 md:mt-32 text-lg md:text-lg"
+          >
             Prendre un RDV
-          </button>
+          </motion.button>
         </div>
         <div>
           <img
