@@ -147,7 +147,7 @@ function Telemedecine() {
         <h1 className="text-black text-3xl md:text-5xl mt-10 font-bold">
           La Télémedecine
         </h1>
-        <p className="text-gray-400 text-sm md:text-lg mt-10">
+        <p className="text-gray-400 text-lg md:text-lg mt-10">
           Il s’agit d’une consultation à distance, entre un médecin et un
           patient (seul ou assisté d’un professionnel de santé). Tout médecin
           libéral ou salarié d’un établissement de santé peut effectuer une
@@ -176,23 +176,23 @@ function AutoMedecine() {
             L’automédication Facilite la{" "}
             <span className="text-red-600"> Mort</span>
           </h1>
-          <p className="mt-5 text-sm md:text-lg">
+          <p className="mt-5 text-lg">
             Pourquoi se soigner seul peut s’avérer dangereux ?{" "}
           </p>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-lg">
             Risques dus au médicament lui-même : <br /> Méconnaissance des
             composants du médicament ; Toxicité méconnue ; Date de péremption du
             médicament.{" "}
           </p>
 
-          <p className="mt-5 text-sm md:text-lg">
+          <p className="mt-5 text-lg">
             Risques liés à la prise : <br /> Interactions médicamenteuses ;
             Erreur de posologie ; Méconnaissance des effets secondaires ; Non
             prise en compte des éventuelles allergies.{" "}
           </p>
 
-          <p className="mt-5 text-sm md:text-lg">
+          <p className="mt-5 text-lg">
             Difficultés pour le corps médical : <br />
             <br />
             Retard de diagnostic , La prise de médicaments dans le cadre d’une

@@ -17,14 +17,38 @@ export function Footer() {
         </div>
         <div className="">
           <h1 className="hidden md:block text-white font-bold md:text-lg">
-            Company
+            Compagnie
           </h1>
           <div className="text-medDarkGray text-sm mt-5">
             <ul>
-              <li className="my-2">About us</li>
-              <li className="my-2">Blog</li>
-              <li className="my-2">Services</li>
-              <li className="my-2">Contact us</li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                <a href="/#"> A propos de Medcy </a>{" "}
+              </motion.li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                <a href="/#"> Blog </a>{" "}
+              </motion.li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                <a href="/#"> Services </a>{" "}
+              </motion.li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                <a href="/#">Contactez nous </a>{" "}
+              </motion.li>
             </ul>
           </div>
         </div>
@@ -35,10 +59,35 @@ export function Footer() {
           </h1>
           <div className="text-medDarkGray text-sm mt-5">
             <ul>
-              <li className="my-2">Career counseling</li>
-              <li className="my-2">Relationship issues</li>
-              <li className="my-2">Relationships</li>
-              <li className="my-2">Sleep and insomnia</li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                {" "}
+                <a href="/#">Career counseling</a>{" "}
+              </motion.li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                <a href="/#">Relationship issues</a>
+              </motion.li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                <a href="/#">Relationships</a>
+              </motion.li>
+              <motion.li
+                initial={{ x: 1 }}
+                whileHover={{ x: 5 }}
+                className="my-2"
+              >
+                <a href="/#">Sleep and insomnia</a>
+              </motion.li>
             </ul>
           </div>
         </div>
@@ -69,7 +118,11 @@ export function Footer() {
       </article>
       <article className="flex justify-between items-center mt-10 md:px-10  bottom-0">
         <div className="flex">
-          <div className="mx-2 items-center">
+          <motion.div
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className="mx-2 items-center"
+          >
             <a
               href="https://www.facebook.com/Medcy-108780835274082"
               target="_blank"
@@ -83,8 +136,12 @@ export function Footer() {
                 />
               </div>
             </a>
-          </div>
-          <div className="mx-2 items-center">
+          </motion.div>
+          <motion.div
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className="mx-2 items-center"
+          >
             <a href="https://instagram.com" target="_blank" rel="noreferrer">
               <div className="h-6 w-6 bg-medBlue rounded-full text-white grid place-content-center">
                 <img
@@ -94,8 +151,12 @@ export function Footer() {
                 />
               </div>
             </a>
-          </div>
-          <div className="mx-2 items-center">
+          </motion.div>
+          <motion.div
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
+            className="mx-2 items-center"
+          >
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <div className="h-6 w-6 bg-medBlue rounded-full text-white grid place-content-center">
                 <img
@@ -105,7 +166,7 @@ export function Footer() {
                 />
               </div>
             </a>
-          </div>
+          </motion.div>
         </div>
         <div>
           <p className="text-medDarkGray text-xs"> Copyright © 2022 medcy</p>

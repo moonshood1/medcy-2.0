@@ -16,12 +16,14 @@ const Description = ({ imgUrl, title, text }) => {
     <motion.article
       initial={{ x: 1 }}
       whileHover={{ x: 10 }}
-      className="hidden md:content md:flex md:py-2 mt-10 cursor-pointer"
+      className="content flex md:py-2 mt-10 cursor-pointer"
     >
-      <img src={imgUrl} alt="" className="w-28 h-28" />
-      <div className="ml-10">
-        <h1 className="text-black text-2xl font-bold mt-5">{title}</h1>
-        <p className="text-gray-400 text-sm md:text-lg mt-2">{text}</p>
+      <img src={imgUrl} alt="" className="w-20 h-20 md:w-28 md:h-28" />
+      <div className="mx-4 md:ml-10">
+        <h1 className="text-black text-xl md:text-2xl font-bold md:mt-5">
+          {title}
+        </h1>
+        <p className="text-gray-400 text-lg mt-2">{text}</p>
       </div>
     </motion.article>
   );
@@ -57,19 +59,20 @@ const Method = ({ text }) => {
 
 function Procedure() {
   return (
-    <section className="hidden md:content md:flex md:py-2 mt-10">
+    <section className="md:flex md:py-2 mt-10">
       <img
         src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669550421/medcy/sick-afro-woman-wrapped-in-blanket-blowing-her-run-2021-08-29-10-14-46-utc_zthnnj.jpg"
         alt=""
         style={{ maxHeight: "700px" }}
+        className="hidden md:block"
       />
-      <div className="ml-10">
+      <div className="mx-2 md:ml-10">
         <h1 className="text-black text-3xl md:text-5xl mt-10 font-bold">
           Comment ça marche ?
         </h1>
         <Description
           imgUrl={
-            "https://res.cloudinary.com/dhc0siki5/image/upload/v1669550409/medcy/Capture_d_e%CC%81cran_2022-11-27_a%CC%80_11.35.22_k8pinc.png"
+            "https://res.cloudinary.com/dhc0siki5/image/upload/v1669806132/medcy/Sans_titre_1_lahqlm.png"
           }
           title={"Décrivez votre mal"}
           text={
@@ -79,7 +82,7 @@ function Procedure() {
 
         <Description
           imgUrl={
-            "https://res.cloudinary.com/dhc0siki5/image/upload/v1669550410/medcy/Capture_d_e%CC%81cran_2022-11-27_a%CC%80_11.35.32_pwz2zf.png"
+            "https://res.cloudinary.com/dhc0siki5/image/upload/v1669806132/medcy/Sans_titre_mti4dx.png"
           }
           title={"Trouvez un Docteur"}
           text={
@@ -89,7 +92,7 @@ function Procedure() {
 
         <Description
           imgUrl={
-            "https://res.cloudinary.com/dhc0siki5/image/upload/v1669550410/medcy/Capture_d_e%CC%81cran_2022-11-27_a%CC%80_11.35.41_ar3xcm.png"
+            "https://res.cloudinary.com/dhc0siki5/image/upload/v1669806132/medcy/Sans_titre_2_mszulb.png"
           }
           title={"Commencez la consultation"}
           text={
