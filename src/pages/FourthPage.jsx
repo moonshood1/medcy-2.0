@@ -116,7 +116,7 @@ function Research() {
           </div>
         </div>
       </div>
-      <div className="bg-medDark text-white px-4 pt-5 md:pt-20 md:y-10">
+      <div className="bg-medDark text-white px-4 pt-5 md:pt-20 md:my-14">
         <h1 className="text-3xl uppercase">Nos recherches</h1>
         <div className="md:mt-10">
           <Method text={"Centre de recherche médicale"} />
