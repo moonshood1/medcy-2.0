@@ -29,7 +29,7 @@ const Description = ({ imgUrl, title, text }) => {
   );
 };
 
-const Method = ({ text }) => {
+export const Method = ({ text }) => {
   return (
     <motion.div
       initial={{ x: 0 }}

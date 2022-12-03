@@ -65,16 +65,16 @@ export function Footer() {
                 className="my-2"
               >
                 {" "}
-                <a href="/#">Career counseling</a>{" "}
+                <a href="/#">Service client : </a>{" "}
               </motion.li>
               <motion.li
                 initial={{ x: 1 }}
                 whileHover={{ x: 5 }}
                 className="my-2"
               >
-                <a href="/#">Relationship issues</a>
+                <a href="/#">(225) 0101831415</a>
               </motion.li>
-              <motion.li
+              {/* <motion.li
                 initial={{ x: 1 }}
                 whileHover={{ x: 5 }}
                 className="my-2"
@@ -87,7 +87,7 @@ export function Footer() {
                 className="my-2"
               >
                 <a href="/#">Sleep and insomnia</a>
-              </motion.li>
+              </motion.li> */}
             </ul>
           </div>
         </div>
@@ -142,11 +142,15 @@ export function Footer() {
             whileHover={{ scale: 1.1 }}
             className="mx-2 items-center"
           >
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/company/medcysant%C3%A9/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="h-6 w-6 bg-medBlue rounded-full text-white grid place-content-center">
                 <img
-                  src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669766890/medcy/logo-ig-instagram-icon-download-icons-12_cszstc.png"
-                  alt="instagram_link"
+                  src="https://res.cloudinary.com/dhc0siki5/image/upload/v1670070251/medcy/174857_uomkgj.png"
+                  alt="linkedin_link"
                   className="w-4 h-4"
                 />
               </div>
@@ -157,11 +161,15 @@ export function Footer() {
             whileHover={{ scale: 1.1 }}
             className="mx-2 items-center"
           >
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/medcy077/?hl=fr"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="h-6 w-6 bg-medBlue rounded-full text-white grid place-content-center">
                 <img
-                  src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669766954/medcy/733635_chidya.png"
-                  alt="twitter_link"
+                  src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669766890/medcy/logo-ig-instagram-icon-download-icons-12_cszstc.png"
+                  alt="ig_link"
                   className="w-4 h-4"
                 />
               </div>
