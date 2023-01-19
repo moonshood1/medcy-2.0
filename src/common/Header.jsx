@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export const openUrl = (url) => {
-  window.open(url, "_blank");
+  window.location.href = url;
 };
 
 export function Header() {
@@ -15,25 +15,25 @@ export function Header() {
         />
       </div>
       <div className="hidden md:flex text-gray-400 md:text-xl space-x-16">
-        <motion.a initial={{ y: 0 }} whileHover={{ y: -5 }} href="/#">
+        {/* <motion.a initial={{ y: 0 }} whileHover={{ y: -5 }} href="/#">
           Accueil
-        </motion.a>
-        <motion.a
+        </motion.a>re */}
+        {/* <motion.a
           initial={{ y: 0 }}
           whileHover={{ y: -5 }}
           onClick={() => openUrl("https://app.medcy.ci/accueil/departement")}
           className="cursor-pointer"
         >
           Services
-        </motion.a>
-        <motion.a
+        </motion.a> */}
+        {/* <motion.a
           initial={{ y: 0 }}
           whileHover={{ y: -5 }}
           onClick={() => openUrl("https://app.medcy.ci/accueil/contact")}
           className="cursor-pointer"
         >
           Contact
-        </motion.a>
+        </motion.a> */}
       </div>
 
       <div className="flex gap-10">
@@ -41,7 +41,7 @@ export function Header() {
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
           className="hidden md:flex btn bg-medBlue text-white drop-shadow-2xl text-lg md:text-lg"
-          onClick={() => openUrl("https://app.medcy.ci/accueil/consultation")}
+          onClick={() => openUrl("https://app.medcy.ci/register")}
         >
           S'inscrire
         </motion.button>
@@ -108,9 +108,7 @@ export function Header() {
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.1 }}
               className="btn bg-medBlue text-white drop-shadow-2xl text-lg md:text-lg"
-              onClick={() =>
-                openUrl("https://app.medcy.ci/accueil/consultation")
-              }
+              onClick={() => openUrl("https://app.medcy.ci/register")}
             >
               S'inscrire
             </motion.button>

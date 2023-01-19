@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { openUrl } from "../common/Header";
+// import { openUrl } from "../common/Header";
 
 const buttonVariant = {
   hover: {
@@ -120,14 +120,14 @@ function Treatment() {
           <Method text={"Affections de la peau "} />
           <Method text={"Maladies digestives"} />
           <Method text={"Douleurs et Affections diverses"} />
-          <motion.button
+          {/* <motion.button
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.1 }}
             className="btn bg-medBlue text-white mt-10 text-lg md:text-lg"
             onClick={() => openUrl("https://app.medcy.ci/accueil/departement")}
           >
             Voir tous les services
-          </motion.button>
+          </motion.button> */}
         </div>
       </article>
       <article className="hidden md:flex mt-auto">
