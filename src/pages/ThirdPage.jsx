@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 function Doctor() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10 my-20">
       <div className="px-3 md:px-0">
-        <h1 className="text-4xl mt-10">
+        <h1 className="text-2xl md:text-4xl mt-10">
           Medecins, proposez la téléconsultation
         </h1>
         <p className="mt-5 md:mt-10 text-medDarkGray text-lg">
@@ -12,13 +12,13 @@ function Doctor() {
           organisation, vos revenus et d’assurer le suivi de vos patients à
           distance ?
         </p>
-        <motion.button
+        {/* <motion.button
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
           className="btn bg-medBlue text-white mt-10 text-lg md:text-lg"
         >
           S'inscrire
-        </motion.button>
+        </motion.button> */}
       </div>
       <div>
         <img
@@ -42,7 +42,7 @@ function Pharmacy() {
         />
       </div>
       <div className="px-3 md:px-0">
-        <h1 className="text-4xl">
+        <h1 className="mt-3 text-2xl md:text-4xl">
           L’ordonnance en ligne est valable en pharmacie
         </h1>
         <p className="mt-2 text-medDarkGray text-lg">

@@ -20,14 +20,15 @@ function Carousel() {
               items: 1,
             },
           }}
-          autoplay
+          autoplay={false}
           autoplayTimeout={5000}
           loop
           autoplaySpeed={4000}
         >
           <div className="relative">
             <img
-              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669157215/medcy/2_bzsskt.jpg"
+              // src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669157215/medcy/2_bzsskt.jpg"
+              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1674121263/medcy/2_bzsskt_k3glza.jpg"
               alt="doctor_reading"
               className="min-w-full"
             />
@@ -38,19 +39,20 @@ function Carousel() {
                 minutes <br />
                 sans se déplacer
               </p>
-              <motion.button
+              {/* <motion.button
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
-                className="btn mt-5 md:mt-32 bg-white text-medBlue drop-shadow-2xl text-lg md:text-lg"
+                className="btn mt-5 bg-white text-medBlue drop-shadow-2xl text-lg md:text-lg"
               >
                 Prendre un RDV
-              </motion.button>
+              </motion.button> */}
             </div>
           </div>
 
           <div className="relative backdrop-contrast-100">
             <img
-              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669159759/medcy/1_64668197_omfgz4.png"
+              // src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669159759/medcy/1_64668197_omfgz4.png"
+              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1674121263/medcy/1_64668197_omfgz4_iekeyq.jpg"
               alt="client_reading"
               className="min-w-full"
             />
@@ -62,13 +64,13 @@ function Carousel() {
                 Finis les soucis de deplacement <br /> et de commodités
               </p>
 
-              <motion.button
+              {/* <motion.button
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
-                className="btn hidden md:flex md:mt-32  bg-white text-medBlue text-lg md:text-lg"
+                className="btn hidden md:flex  bg-white text-medBlue text-lg md:text-lg"
               >
                 Prendre un RDV
-              </motion.button>
+              </motion.button> */}
             </div>
           </div>
         </OwlCarousel>
@@ -88,7 +90,7 @@ function Carousel() {
               items: 1,
             },
           }}
-          autoplay
+          autoplay={false}
           autoplayTimeout={5000}
           loop
           autoplaySpeed={4000}
@@ -100,13 +102,13 @@ function Carousel() {
                 alt="img"
               />
               <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-medBlue opacity-80">
-                <p className="my-2 text-lg text-white">
+                <p className="my-2 text-2xl text-white">
                   Le soulagement d'accéder <br /> à un medecin, en quelques
                   minutes sans se déplacer
                 </p>
-                <button className="btn bg-white text-medBlue text-sm mt-5">
+                {/* <button className="btn bg-white text-medBlue text-sm mt-5">
                   Prendre un RDV
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -118,13 +120,13 @@ function Carousel() {
                 alt="img_alt"
               />
               <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-medBlue opacity-80">
-                <p className="my-1 text-lg text-white">
+                <p className="my-1 text-2xl text-white">
                   Avec Medcy, les consultations se font en un clic et à distance
                   Finis les soucis de deplacement et de commodités
                 </p>
-                <button className="btn bg-white text-medBlue text-sm mt-5">
+                {/* <button className="btn bg-white text-medBlue text-sm mt-5">
                   Prendre un RDV
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -155,13 +157,13 @@ function Telemedecine() {
           présentiel. Toutes les situations médicales peuvent donner lieu à une
           téléconsultation.
         </p>
-        <motion.button
+        {/* <motion.button
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
           className="btn bg-medBlue text-white mt-10 text-lg md:text-lg"
         >
           S'inscrire
-        </motion.button>
+        </motion.button> */}
       </div>
     </section>
   );
@@ -170,7 +172,7 @@ function Telemedecine() {
 function AutoMedecine() {
   return (
     <section className="mx-2 mt-5">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 text-white gap-0">
+      <div className="w-full grid grid-cols-1  text-white gap-0">
         <div className="px-4 bg-gray-800 pb-3">
           <h1 className="text-3xl md:text-5xl font-bold mt-3">
             L’automédication Facilite la{" "}
@@ -202,21 +204,21 @@ function AutoMedecine() {
             Aggravation des maux.
           </p>
 
-          <motion.button
+          {/* <motion.button
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.1 }}
             className="btn bg-medBlue text-white mt-5 md:mt-32 text-lg md:text-lg"
           >
             Prendre un RDV
-          </motion.button>
+          </motion.button> */}
         </div>
-        <div>
+        {/* <div>
           <img
             alt="sick_man"
             src="https://res.cloudinary.com/dhc0siki5/image/upload/v1669162791/medcy/5_1_hislxt.png"
             className="w-full h-full"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
